@@ -1,9 +1,8 @@
 #Hvor legge hva
 
-Rekkefølgen configfiler leses er følgende:
+##Rekkefølgen configfiler leses er følgende:
 
 1. `/etc/profile` 
-
 2. `~/.bash_profile` 
 3. `~/.bash_login` 
 4. `~/.profile` 
