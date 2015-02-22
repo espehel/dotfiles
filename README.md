@@ -7,13 +7,11 @@ Rekkefølgen configfiler leses er følgende:
 3. ~/.bash_login
 4. ~/.profile
 
-Interactive non-login: `.bashrc`
-Loggin shell: `.bash_profile`
+* Interactive non-login: `.bashrc`
+*Loggin shell: `.bash_profile`
 
 OS X leser ikke .bashrc, så for å gjøre det som på linux, legg 
 `source ~/.bashrc`i `.bash_profile`. 
-
-
 
 
 
