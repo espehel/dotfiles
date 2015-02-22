@@ -25,8 +25,7 @@ Last ned fra http://iterm2.com/
 For å sette fish som standard i iTerm
 1. Settings (cmd + ,)
 2. Profiles
-3. Command:
-4. Sett til `/usr/local/bin/fish`
+3. Command: `/usr/local/bin/fish`
 
 #Iterm fargetema og visning
 1. Last ned tema fra http://ethanschoonover.com/solarized
