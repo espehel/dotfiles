@@ -13,8 +13,18 @@ Rekkefølgen configfiler leses er følgende:
 OS X leser ikke .bashrc, så for å gjøre det som på linux, legg 
 `source ~/.bashrc`i `.bash_profile`. 
 
-#Install homebrew
+#Installer iTerm
+Last ned fra http://iterm2.com/
+
+#Installer homebrew
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
+#Installer fish
+`brew install fish´
 
+For å sette fish som standard i iTerm
+1. Settings (cmd + ,)
+2. Profiles
+3. Command
+4. Sett til `/usr/local/bin/fish`
 
