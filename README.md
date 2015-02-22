@@ -33,6 +33,8 @@ Last ned fra http://iterm2.com/
   * Style: Top of window
   * Screen: No Preference
   * Space: All Spaces
+3. Installer OhMyFish 
+  * `curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish`
 
 
 
