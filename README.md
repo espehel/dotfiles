@@ -28,7 +28,9 @@ Last ned fra http://iterm2.com/
 3. Command: `/usr/local/bin/fish`
 
 #Iterm fargetema og visning
-1. Last ned tema fra http://ethanschoonover.com/solarized
+1. Last ned tema fra http://ethanschoonover.com/solarized/files/solarized.zip
+  * Settings -> Profiles -> Colors -> Load Presets
+  * Hent iTerm2 presets som ligger i .zip.
 2. Profiles -> Window ->
   * Style: Top of window
   * Screen: No Preference
