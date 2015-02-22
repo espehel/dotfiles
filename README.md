@@ -13,21 +13,15 @@
 OS X leser ikke .bashrc, så for å gjøre det som på linux, legg 
 `source ~/.bashrc`i `.bash_profile`. 
 
-#Installer iTerm
-Last ned fra http://iterm2.com/
-
 #Installer homebrew
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-#Installer fish
-`brew install fish` 
+#Iterm
 
-##For å sette fish som standard i iTerm
-1. Settings (cmd + ,)
-2. Profiles
-3. Command: `/usr/local/bin/fish`
+##Installer iTerm
+Last ned fra http://iterm2.com/
 
-#Iterm fargetema og visning
+##fargetema og visning
 1. Last ned tema fra http://ethanschoonover.com/solarized/files/solarized.zip
   * Settings -> Profiles -> Colors -> Load Presets
   * Hent iTerm2 presets som ligger i .zip.
@@ -39,5 +33,11 @@ Last ned fra http://iterm2.com/
   * Gå inn i Downloads
   * `curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish`
 
+##Installer fish
+`brew install fish` 
 
+###For å sette fish som standard i iTerm
+1. Settings (cmd + ,)
+2. Profiles
+3. Command: `/usr/local/bin/fish`
 
