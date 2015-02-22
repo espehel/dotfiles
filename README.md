@@ -35,3 +35,4 @@ For å sette fish som standard i iTerm
   * Space: All Spaces
 
 
+
