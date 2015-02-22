@@ -1,9 +1,4 @@
-# reset PATH variable
-PATH=/usr/bin:/bin:/usr/sbin:/sbin
-export PATH
+#LOGIN BASH
 
-# add custom, local installations to PATH
-PATH=/usr/local/bin:/usr/local/sbin:"$PATH"
-
-# add MacPorts to PATH
-PATH=/opt/local/bin:/opt/local/sbin:"$PATH"
+#Add .bashrc to be run at each startup, as it is not in OS X
+source ~/.bashrc
