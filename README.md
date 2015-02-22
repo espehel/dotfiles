@@ -20,7 +20,7 @@ Last ned fra http://iterm2.com/
 `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 #Installer fish
-`brew install fish`
+`brew install fish` 
 
 For å sette fish som standard i iTerm
 1. Settings (cmd + ,)
