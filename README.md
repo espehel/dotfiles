@@ -4,8 +4,8 @@ Rekkefølgen configfiler leses er følgende:
 
 1. /etc/profile
 2. ~/.bash_profile
-3. ~/.bash_login
-4. ~/.profile
+3. 3. ~/.bash_login
+4. 4. ~/.profile
 
 * Interactive non-login: `.bashrc`
 * Loggin shell: `.bash_profile`
