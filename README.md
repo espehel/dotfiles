@@ -28,7 +28,11 @@ For å sette fish som standard i iTerm
 3. Command:
 4. Sett til `/usr/local/bin/fish`
 
-#Iterm color scheme
-1. Last ned theme fra http://ethanschoonover.com/solarized
+#Iterm fargetema og visning
+1. Last ned tema fra http://ethanschoonover.com/solarized
+2. Profiles -> Window ->
+  * Style: Top of window
+  * Screen: No Preference
+  * Space: All Spaces
 
 
