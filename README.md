@@ -18,7 +18,7 @@ OS X leser ikke .bashrc, så for å gjøre det som på linux, legg
 
 #Iterm
 
-##Installer iTerm
+##Installer iTerm2
 Last ned fra http://iterm2.com/
 
 ##fargetema og visning
@@ -40,6 +40,9 @@ Last ned fra http://iterm2.com/
 1. Settings (cmd + ,)
 2. Profiles
 3. Command: `/usr/local/bin/fish`
+
+##Vis/Skjul iTerm2
+Preferences -> Keys -> Hotkey -> Show/hide Iterm2 with a system-wide hotkey
 
 #Fjerne wireless popup
 
