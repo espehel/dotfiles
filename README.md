@@ -41,3 +41,9 @@ Last ned fra http://iterm2.com/
 2. Profiles
 3. Command: `/usr/local/bin/fish`
 
+#Fjerne wireless popup
+
+##Hvordan:
+1. First go to [Hard Disk] > System > Library > CoreServices > Captive Network Assistant.app
+2. Type an ‘X’ in start of name (actually any letter will do, but I like ‘X’ so I can easily find the app later at the bottom of the list even if I forgot its exact name). The name should now read ‘XCaptive Network Assistant.app’.
+3. And that’s it! Captive Network Assistant will never run again unless you decide to change its name back to what it was (to do so, just repeat the procedure above and remove the ‘X’).
