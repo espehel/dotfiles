@@ -41,6 +41,9 @@ Last ned fra http://iterm2.com/
 2. Profiles
 3. Command: `/usr/local/bin/fish`
 
+###Fish dokumentasjon
+http://fishshell.com/docs/2.0/
+
 ##Vis/Skjul iTerm2
 Preferences -> Keys -> Hotkey -> Show/hide Iterm2 with a system-wide hotkey
 
