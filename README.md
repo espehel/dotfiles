@@ -26,7 +26,7 @@ Last ned fra http://iterm2.com/
   * Settings -> Profiles -> Colors -> Load Presets
   * Hent iTerm2 presets som ligger i .zip.
 2. Profiles -> Window ->
-  * Style: Top of window
+  * Style: Top of screen
   * Screen: No Preference
   * Space: All Spaces
 3. Installer OhMyFish
