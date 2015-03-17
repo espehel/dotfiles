@@ -53,3 +53,17 @@ Preferences -> Keys -> Hotkey -> Show/hide Iterm2 with a system-wide hotkey
 1. First go to [Hard Disk] > System > Library > CoreServices > Captive Network Assistant.app
 2. Type an ‘X’ in start of name (actually any letter will do, but I like ‘X’ so I can easily find the app later at the bottom of the list even if I forgot its exact name). The name should now read ‘XCaptive Network Assistant.app’.
 3. And that’s it! Captive Network Assistant will never run again unless you decide to change its name back to what it was (to do so, just repeat the procedure above and remove the ‘X’).
+
+#Diverse ProsjektOppsett
+
+##SharedAssemblyInfo.cs
+1. Høyreklikk på Solution
+2. Add > New Item > SharedAssemblyInfo.cs
+3. På hvert underprosjekt
+ * `alt-shift-a`
+ * Merk filen `SharedAssemblyInfo.cs`
+ * Trykk på pilen ved siden av _Add_ og _Add as Link_
+ * Dra filen inn i Properties
+ * `Legg inn [assembly: AssemblyVersion("1.0.0.0")]` og `[assembly: AssemblyFileVersion("1.0.0.0")]` og fjern fra `AssemblyInfo.cs`
+ 
+Guiden finnes på http://blogs.msdn.com/b/jjameson/archive/2009/04/03/shared-assembly-info-in-visual-studio-projects.aspx
