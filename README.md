@@ -54,7 +54,7 @@ Preferences -> Keys -> Hotkey -> Show/hide Iterm2 with a system-wide hotkey
 2. Type an ‘X’ in start of name (actually any letter will do, but I like ‘X’ so I can easily find the app later at the bottom of the list even if I forgot its exact name). The name should now read ‘XCaptive Network Assistant.app’.
 3. And that’s it! Captive Network Assistant will never run again unless you decide to change its name back to what it was (to do so, just repeat the procedure above and remove the ‘X’).
 
-#Diverse ProsjektOppsett
+#Diverse Prosjektoppsett
 
 ##SharedAssemblyInfo.cs
 1. Høyreklikk på Solution
@@ -67,3 +67,16 @@ Preferences -> Keys -> Hotkey -> Show/hide Iterm2 with a system-wide hotkey
  * `Legg inn [assembly: AssemblyVersion("1.0.0.0")]` og `[assembly: AssemblyFileVersion("1.0.0.0")]` og fjern fra `AssemblyInfo.cs`
  
 Guiden finnes på http://blogs.msdn.com/b/jjameson/archive/2009/04/03/shared-assembly-info-in-visual-studio-projects.aspx
+
+##Signering med StrongNameKey
+1. Høyreklikk på prosjektet som skal signeres
+2. Properties (ALT + Enter) > Signing
+3. Huk av for _Sign the assembly_
+4. Generer en .pfx-fil, kall den gjerne navnet på solution (eks. `MyPrivateKey.pfx`)
+5. Vi ønsker å gjøre slik at alle underprosjekter bruker den samme så....
+6. Flytt .pfx-filen til rotmappen for Solution og fjern gammel referanse på prosjektet du valgte for signering
+7. På hvert underprosjekt:
+ * `alt-shift-a`
+ * Merk filen `MyPrivateKey.pfx`
+ * Trykk på pilen ved siden av _Add_ og _Add as Link_
+ * Dra filen inn i prosjektet.
