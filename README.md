@@ -86,3 +86,13 @@ Guiden finnes på http://blogs.msdn.com/b/jjameson/archive/2009/04/03/shared-ass
  * Unload project
  * Edit project file
  * Notis: Denne kan automatisk bli relativ i noen tilfeller om VS klarer å rydde opp selv.
+
+##Legge til byggnummer i TeamCity fra .csproj
+1. Legg til ` <TeamCityBuild>false</TeamCityBuild>` i _Property Group_, _Configuration_, som vist her 
+ * ```<PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>DigipostApiClientShared
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <TeamCityBuild>false</TeamCityBuild>```
+2. Legg til ``` <PropertyGroup Condition=" '$(TEAMCITY_BUILD_PROPERTIES_FILE)' != ''">
+    <TeamCityBuild>true</TeamCityBuild>
+  </PropertyGroup>``` etter foregående Property Group 
