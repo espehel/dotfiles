@@ -96,3 +96,11 @@ Guiden finnes på http://blogs.msdn.com/b/jjameson/archive/2009/04/03/shared-ass
 2. Legg til ``` <PropertyGroup Condition=" '$(TEAMCITY_BUILD_PROPERTIES_FILE)' != ''">
     <TeamCityBuild>true</TeamCityBuild>
   </PropertyGroup>``` etter foregående Property Group 
+3. Legg til følgende før slutt-tag for prosjekt. ```<Target Name="TeamCity" AfterTargets="Build" Condition=" '$(TeamCityBuild)'=='true'">
+    <GetAssemblyIdentity AssemblyFiles="bin\$(ConfigurationName)\$(TargetFileName)">
+      <Output TaskParameter="Assemblies" ItemName="AssemblyIdentity" />
+    </GetAssemblyIdentity>
+    <Message Text="##teamcity[buildNumber '%(AssemblyIdentity.Version)']" />
+  </Target>```
+4. Se følgende guide for mer info: https://johanleino.wordpress.com/2012/09/22/using-assembly-version-as-teamcity-build-number-throughout-build-chain/
+
