@@ -75,8 +75,14 @@ Guiden finnes på http://blogs.msdn.com/b/jjameson/archive/2009/04/03/shared-ass
 4. Generer en .pfx-fil, kall den gjerne navnet på solution (eks. `MyPrivateKey.pfx`)
 5. Vi ønsker å gjøre slik at alle underprosjekter bruker den samme så....
 6. Flytt .pfx-filen til rotmappen for Solution og fjern gammel referanse på prosjektet du valgte for signering
-7. På hvert underprosjekt:
+7. Høyreklikk på Solution og velg Add > Existing Item > `MyPrivateKey.pfx` 
+8. På hvert underprosjekt:
  * `alt-shift-a`
  * Merk filen `MyPrivateKey.pfx`
  * Trykk på pilen ved siden av _Add_ og _Add as Link_
- * Dra filen inn i prosjektet.
+9. Signering må legges til på nytt, så gå inn i Signing i prosjektets innstillinger (ALT + Enter)
+10. Velg filen du la til referanse til
+11. Får du feilmelding på ugyldig sti, legg relativ sti til denne manuelt i prosjektfila i en editor.
+ * Unload project
+ * Edit project file
+ * Notis: Denne kan automatisk bli relativ i noen tilfeller om VS klarer å rydde opp selv.
