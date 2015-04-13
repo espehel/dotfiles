@@ -47,6 +47,12 @@ http://fishshell.com/docs/2.0/
 ##Vis/Skjul iTerm2
 Preferences -> Keys -> Hotkey -> Show/hide Iterm2 with a system-wide hotkey
 
+##Installere sublime
+1. Last ned [herfra](http://www.sublimetext.com/3)
+2. Installer [Package Control](https://packagecontrol.io/installation)
+3. Reindent shortcut. Legg følgende inn i settings:
+ *```{ "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } }```
+
 #Fjerne wireless popup
 
 ##Hvordan:
