@@ -52,8 +52,9 @@ Preferences -> Keys -> Hotkey -> Show/hide Iterm2 with a system-wide hotkey
 ##Installere sublime
 1. Last ned [herfra](http://www.sublimetext.com/3)
 2. Installer [Package Control](https://packagecontrol.io/installation)
-3. Reindent shortcut. Legg følgende inn i settings:
- *```{ "keys": ["ctrl+shift+r"], "command": "reindent" , "args": { "single_line": false } }```
+3. Indenter xml og json - [indentxml](https://github.com/alek-sys/sublimetext_indentxml)
+ * Kan installeres ved å skrive Palette: _Package Control_ og søk etter _indentxml_
+
 
 #Fjerne wireless popup
 
