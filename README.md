@@ -23,6 +23,8 @@ NOTIS: Alltid bruk brew, aldri installer som sudo!
 ##Installer iTerm2
 Last ned fra http://iterm2.com/
 
+Lur info for Iterm2 - [Working Effekctively with iTerm2](http://teohm.com/blog/2012/03/22/working-effectively-with-iterm2/)
+
 ##fargetema og visning
 1. Last ned tema fra http://ethanschoonover.com/solarized/files/solarized.zip
   * Settings -> Profiles -> Colors -> Load Presets
