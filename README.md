@@ -31,7 +31,8 @@ Last ned fra http://iterm2.com/
   * Style: Top of screen
   * Screen: No Preference
   * Space: All Spaces
-3. Installer OhMyFish
+3. Keys -> Hotkey -> ALT + SPACE 
+4. Installer OhMyFish
   * Gå inn i Downloads
   * `curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish`
 
