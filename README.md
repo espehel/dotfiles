@@ -129,3 +129,4 @@ Følg guiden som ligger [her](https://help.github.com/articles/using-jekyll-with
 source 'https://rubygems.org' 
  gem 'github-pages' 
  ``` 
+4. Kjør docs med følende: ``` bundle exec jekyll serve ```
