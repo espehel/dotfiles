@@ -124,5 +124,8 @@ Følg guiden som ligger [her](https://help.github.com/articles/using-jekyll-with
 1. Skriv ```ruby --version```. Hvis versjon er 1.9.3 eller 2.0.0 er det ordnet
 2. Installer jekyll med ```sudo gem install jekyll```. Da installerer du jekyll med ruby sin pakkehåndterer _gem_.
 3. Installer bundle (brukes for å kjøre som Github gjør). ```sudo gem install bundler```
- * Bundler henter avhengigheter som trengs ved å legge 
- * ```source 'https://rubygems.org <newline> gem 'github-pages ``` i .gemfile.
+ * Bundler henter avhengigheter som trengs ved å legge følgende i .gemfile:
+ ```
+source 'https://rubygems.org' 
+ gem 'github-pages' 
+ ``` 
