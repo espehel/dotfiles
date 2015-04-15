@@ -116,3 +116,13 @@ Guiden finnes på http://blogs.msdn.com/b/jjameson/archive/2009/04/03/shared-ass
   </Target>```
 4. Se følgende guide for mer info: https://johanleino.wordpress.com/2012/09/22/using-assembly-version-as-teamcity-build-number-throughout-build-chain/
 
+
+#Sette opp jekyll for docs.
+
+Følg guiden som ligger [her](https://help.github.com/articles/using-jekyll-with-pages/). Her står alt man må gjøre, og denne guiden bør følges fra start til slutt. Det er helt greit å bruke _sudo_ for å installere gems. _rbenv_ skal ikke være nødvendig. 
+
+1. Skriv ```ruby --version```. Hvis versjon er 1.9.3 eller 2.0.0 er det ordnet
+2. Installer jekyll med ```sudo gem install jekyll```. Da installerer du jekyll med ruby sin pakkehåndterer _gem_.
+3. Installer bundle (brukes for å kjøre som Github gjør). ```sudo gem install bundler```
+ * Bundler henter avhengigheter som trengs ved å legge 
+ * ```source 'https://rubygems.org <newline> gem 'github-pages ``` i .gemfile.
