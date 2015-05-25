@@ -130,3 +130,10 @@ source 'https://rubygems.org'
  gem 'github-pages' 
  ``` 
 4. Kjør docs med følende: ``` bundle exec jekyll serve ```
+
+#Lage et selvsignert sertifikat med lang gyldighet.
+1. For å lage et selvsignert sertifikat, følger jeg [denne](https://bernhardelbl.wordpress.com/2012/03/20/create-a-non-expiring-test-certificate-pfx-for-clickonce-applications/) guiden:
+
+2. "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert" -sv DigipostCert.pvk -n "CN=Sample" "DigipostCert.cer" -e 12/31/2200 -r
+
+3. "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\pvk2pfx" -pvk DigipostCert.pvk -spc DigipostCert.cer -pfx DigipostCert.p12"
