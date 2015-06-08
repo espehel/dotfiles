@@ -145,3 +145,10 @@ Hvor vi da får et sertifikat som heter _DigipostCert.cer_ som er selvsignert (-
 "C:\Program Files (x86)\Windows Kits\8.1\bin\x64\pvk2pfx" -pvk DigipostCert.pvk -spc DigipostCert.cer -pfx DigipostCert.p12"
 ```
 Som gir oss en privatekey, _DigipostCert.p12_.
+
+#Hosts
+For å gjøre det lettere å utvikle med servere som ikke har et domene, kan man endre hosts-fila. Denne finner man på følgende sted
+
+```
+/private/etc/hosts
+```
