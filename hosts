@@ -7,5 +7,21 @@
 127.0.0.1       localhost
 255.255.255.255 broadcasthost
 ::1             localhost
+
+#
+# Team City
+#
 46.226.13.214   teamcity.no
 46.226.13.214   teamcity.com
+46.226.13.214   tc.no
+46.226.13.214   tc.com
+46.226.13.214   www.teamcity.no
+46.226.13.214   www.teamcity.com
+46.226.13.214   www.tc.no
+46.226.13.214   www.tc.com
+
+
+
+
+
+
