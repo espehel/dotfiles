@@ -110,11 +110,13 @@ For å kunne referere til andre assemblier, må man signere begge to. Dette gjø
 "ad5cedbf")]
 ```
 , bare endre det som endres må. publickey finner du ved å gjøre [følgende](http://stackoverflow.com/questions/1123683/how-to-declare-a-friend-assembly):
+
 1. 
 ```
 sn -p MyStrongnameKey.snk public.pk
 ```
-3. 
+
+2. 
 ```
 sn -tp public.pk
 ```
