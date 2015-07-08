@@ -189,3 +189,18 @@ Initial Directory: Select as suits your needs.
 Click OK. Now you have command prompt access under the Tools Menu.
 
 Hentet [herfra](http://stackoverflow.com/questions/21476588/where-is-developer-command-prompt-for-vs2013)
+
+#Apache Web server på OSX:
+1.Gå inn i `sudo nano /etc/apache2/users/USERNAME.conf`, hvor USERNAME er _short username_. 
+2.Legg til
+````
+<Directory "/Users/aas/Sites/">
+	  Options Indexes Multiviews
+	  AllowOverride AuthConfig Limit
+	  Order allow,deny
+	  Allow from all
+</Directory>
+```
+3. Kjør med `sudo apachectl start`
+4. Gå til _localhost_ i nettleseren. Voilá!
+
