@@ -206,3 +206,5 @@ Hentet [herfra](http://stackoverflow.com/questions/21476588/where-is-developer-c
 5. Stopp med `sudo apachectl stop` eller restart med `sudo apachectl restart`
 6. Hostes /Library/WebServer/Documents
 
+#Vis thumbprint og virksomhetsid for et sertifikat
+keytool -list -keystore sertifikat.p12 -storetype PKCS12
