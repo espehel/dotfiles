@@ -100,25 +100,19 @@ Guiden finnes på http://blogs.msdn.com/b/jjameson/archive/2009/04/03/shared-ass
  * Notis: Denne kan automatisk bli relativ i noen tilfeller om VS klarer å rydde opp selv.
  
 ###Deklarere friend assembly
-For å kunne referere til andre assemblier, må man signere begge to. Dette gjør man ved å legge til følgende:
-```
-[assembly:InternalsVisibleTo("Google.ProtocolBuffers.Test,PublicKey="+
-"00240000048000009400000006020000002400005253413100040000010001008179f2dd31a648"+
-"2a2359dbe33e53701167a888e7c369a9ae3210b64f93861d8a7d286447e58bc167e3d99483beda"+
-"72f738140072bb69990bc4f98a21365de2c105e848974a3d210e938b0a56103c0662901efd6b78"+
-"0ee6dbe977923d46a8fda18fb25c65dd73b149a5cd9f3100668b56649932dadd8cf5be52eb1dce"+
-"ad5cedbf")]
-```
-, bare endre det som endres må. publickey finner du ved å gjøre [følgende](http://stackoverflow.com/questions/1123683/how-to-declare-a-friend-assembly):
+[Kilde](http://stackoverflow.com/questions/1123683/how-to-declare-a-friend-assembly):
 
-1. 
+Hvis f. eks. domene skal stole på klient, så må domene ha publickey til klient
+
+1. Finn publickey til klient med å gjøre følgende
 ```
 sn -p MyStrongnameKey.snk public.pk
+sn -tp public.pk
 ```
 
-2. 
+2. Legg følgende i AssemblyInfo. For det assembly du vil skal stole på assemblyet du har funnet publickey til
 ```
-sn -tp public.pk
+[assembly: InternalsVisibleTo("Difi.SikkerDigitalPost.Klient,PublicKey=0024000004800...)]
 ```
 
 ##Legge til byggnummer i TeamCity fra .csproj
@@ -195,3 +189,22 @@ Initial Directory: Select as suits your needs.
 Click OK. Now you have command prompt access under the Tools Menu.
 
 Hentet [herfra](http://stackoverflow.com/questions/21476588/where-is-developer-command-prompt-for-vs2013)
+
+#Apache Web server på OSX:
+1. Gå inn i `sudo nano /etc/apache2/users/USERNAME.conf`, hvor USERNAME er _short username_. 
+2. Legg til
+````
+<Directory "/Users/aas/Sites/">
+	  Options Indexes Multiviews
+	  AllowOverride AuthConfig Limit
+	  Order allow,deny
+	  Allow from all
+</Directory>
+```
+3. Kjør med `sudo apachectl start`
+4. Gå til _localhost_ i nettleseren. Voilá!
+5. Stopp med `sudo apachectl stop` eller restart med `sudo apachectl restart`
+6. Hostes /Library/WebServer/Documents
+
+#Vis thumbprint og virksomhetsid for et sertifikat
+keytool -list -keystore sertifikat.p12 -storetype PKCS12
