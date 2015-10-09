@@ -169,6 +169,34 @@ For å gjøre det lettere å utvikle med servere som ikke har et domene, kan man
 /private/etc/hosts
 ```
 
+#ÆØÅ med AutoHotkey
+```
+/*æ og Æ*/
+!'::
+SendInput, {ASC145}
+return
+
+!+'::
+SendInput, {ASC146}
+return
+
+/*ø og Ø*/
+!o::
+SendInput, {ASC0248}
+
+!+o::
+SendInput, {ASC0216}
+
+/*å og Å */
+!a::
+SendInput, {ASC134}
+return
+
+!+a::
+SendInput, {ASC143}
+return
+```
+
 #Visual Studio Command Promt fra VS2013
 
 From VS2013 Menu Select "Tools", then Select "External Tools". Enter as below:
@@ -208,3 +236,4 @@ Hentet [herfra](http://stackoverflow.com/questions/21476588/where-is-developer-c
 
 #Vis thumbprint og virksomhetsid for et sertifikat
 keytool -list -keystore sertifikat.p12 -storetype PKCS12
+
