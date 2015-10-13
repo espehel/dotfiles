@@ -152,9 +152,9 @@ source 'https://rubygems.org'
 
 2.
 ``` 
-"C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert" -sv DigipostCert.pvk -n "CN=Sample" "DigipostCert.cer" -e 12/31/2200 -r 
+"C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert" -pe -sv DigipostCert.pvk -n "CN=Sample" "DigipostCert.cer" -e 12/31/2200 -r 
 ```
-Hvor vi da får et sertifikat som heter _DigipostCert.cer_ som er selvsignert (-r) og går ut i år 2200. 
+Hvor vi da får et sertifikat som heter _DigipostCert.cer_ som er selvsignert (-r) og går ut i år 2200. Det er exportable (-pe). 
 
 3.
 ```
