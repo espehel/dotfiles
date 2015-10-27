@@ -237,3 +237,7 @@ Hentet [herfra](http://stackoverflow.com/questions/21476588/where-is-developer-c
 #Vis thumbprint og virksomhetsid for et sertifikat
 keytool -list -keystore sertifikat.p12 -storetype PKCS12
 
+## Mapper åpner seg ikke i VS2015
+https://stackoverflow.com/questions/19217506/error-in-microsoft-visual-studio-2012-no-exports-were-found-that-match-the-cons
+
+Slett cachen ved å slette mappen `%AppData%\..\Local\Microsoft\VisualStudio\11.0\ComponentModelCache`
