@@ -109,6 +109,10 @@ Hvis f. eks. domene skal stole på klient, så må domene ha publickey til klien
 sn -p MyStrongnameKey.snk public.pk
 sn -tp public.pk
 ```
+eventuelt direkte fra DLL:
+```
+sn -Tp path\to\test\assembly.dll
+```
 
 2. Legg følgende i AssemblyInfo. For det assembly du vil skal stole på assemblyet du har funnet publickey til
 ```
