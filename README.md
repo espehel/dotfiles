@@ -1,22 +1,5 @@
-#Hvor legge hva
-
-##Rekkefølgen configfiler leses er følgende:
-
-1. `/etc/profile` 
-2. `~/.bash_profile` 
-3. `~/.bash_login` 
-4. `~/.profile` 
-
-* Interactive non-login: `.bashrc`
-* Loggin shell: `.bash_profile`
-
-OS X leser ikke .bashrc, så for å gjøre det som på linux, legg 
-`source ~/.bashrc`i `.bash_profile`. 
-
-#Installer homebrew
-`ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-
-NOTIS: Alltid bruk brew, aldri installer som sudo!
+#Hvorfor?
+Dette er mitt ultimate notat for alle mulige ting som gjøres fra tid til annen.
 
 #Iterm
 
@@ -37,20 +20,6 @@ Lur info for Iterm2 - [Working Effekctively with iTerm2](http://teohm.com/blog/2
 4. Installer OhMyFish
   * Gå inn i Downloads
   * `curl -L https://github.com/bpinto/oh-my-fish/raw/master/tools/install.fish | fish`
-
-##Installer fish
-`brew install fish` 
-
-###For å sette fish som standard i iTerm
-1. Settings (cmd + ,)
-2. Profiles
-3. Command: `/usr/local/bin/fish`
-
-###Fish dokumentasjon
-http://fishshell.com/docs/2.0/
-
-##Vis/Skjul iTerm2
-Preferences -> Keys -> Hotkey -> Show/hide Iterm2 with a system-wide hotkey
 
 ##Installere sublime
 1. Last ned [herfra](http://www.sublimetext.com/3)
