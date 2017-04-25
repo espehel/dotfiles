@@ -1,6 +1,16 @@
 #Hvorfor?
 Dette er mitt ultimate notat for alle mulige ting som gjøres fra tid til annen.
 
+# Oppsett av ny mac
+
+## Hva skal jeg ta vare på:
+- GPG Public/Private key (LP)
+- SSH Key (LP)
+- .zshrc
+
+## Hva skal jeg installere:
+- ZSH (http://sourabhbajaj.com/mac-setup/iTerm/zsh.html) - Følg guiden så langt du vil
+
 #Iterm
 
 ##Installer iTerm2
