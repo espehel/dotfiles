@@ -1,11 +1,8 @@
-# Hvorfor?
-Dette er mitt ultimate notat for alle mulige ting som gjøres fra tid til annen.
+# Dotsettings (med noko attåt)
 
-# Oppsett av ny mac
-brew install zsh 
+## Installer apper
+brew install zsh oh-my-zsh
 brew cask install sublime-text2 spotify spectacle sourcetree
-
-Installer oh-my-zsh
 
 ## Sett opp symlinker
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
