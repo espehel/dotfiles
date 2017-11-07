@@ -1,4 +1,4 @@
-#Hvorfor?
+# Hvorfor?
 Dette er mitt ultimate notat for alle mulige ting som gjøres fra tid til annen.
 
 # Oppsett av ny mac
