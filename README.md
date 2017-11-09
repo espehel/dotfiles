@@ -18,7 +18,10 @@ Vurder å lag en egen fil for dette etterhvert
 git config --global push.followTags true
 
 #Symlink Zsh config file to dotfiles repo
-ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc`
+ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
+
+#Symlink SSH config to dotfiles repo
+ln -s ~/.dotfiles/ssh/config ~/.ssh/config
 
 #Add 'subl' as a command for running sublime from Terminal. More info here:https://gist.github.com/olivierlacan/1195304
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
