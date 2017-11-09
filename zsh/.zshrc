@@ -11,8 +11,8 @@ export PATH="$(brew --prefix)/bin:$PATH"
 source $HOME/.digipostrc
 
 # Alias pass-kommandoer slik  at vi kan alternere lettere mellom de
-alias dppass=“export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/digipost-passwords”
-alias vpnpass=“export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/vpn-passwords”
+alias dppass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/digipost-passwords"
+alias vpnpass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/vpn-passwords"
 
 ######################
 #      ALIAS         #
