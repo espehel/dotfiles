@@ -13,3 +13,12 @@ brew cask install sublime-text2 spotify spectacle sourcetree
 ## Andre dotsettings som er interessante
 1. [nicsp](https://github.com/nicksp/dotfiles/blob/master/osx/set-defaults.sh) (se script for å sette opp MacOS-spesifikke ting)
 1. Forøvrig alle de andre på [Github](https://dotfiles.github.io/)
+
+## Kommandoer som bør kjøres 
+Vurder å lag en egen fil for dette etterhvert
+
+```
+#Make sure tags are pushed by default in Git
+git config --global push.followTags true
+
+```
