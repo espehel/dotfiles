@@ -5,16 +5,6 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 export PATH="$(brew --prefix)/bin:$PATH"
 
 ######################
-#     DIGIPOST       #
-######################
-
-source $HOME/.digipostrc
-
-# Alias pass-kommandoer slik  at vi kan alternere lettere mellom de
-alias dppass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/digipost-passwords"
-alias vpnpass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/vpn-passwords"
-
-######################
 #      ALIAS         #
 ######################
 
@@ -53,3 +43,16 @@ ZSH_CUSTOM=~/.dotfiles/zsh/ZSH_CUSTOM
 plugins=(git zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
+
+######################
+#     DIGIPOST       #
+######################
+
+DIGIPOST-HOME=~/projects/digipost/
+
+source $HOME/.digipostrc
+
+# Alias pass-kommandoer slik  at vi kan alternere lettere mellom de
+alias dppass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/digipost-passwords"
+alias vpnpass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/vpn-passwords"
+
