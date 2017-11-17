@@ -23,6 +23,12 @@ ln -s ~/.dotfiles/ssh/config ~/.ssh/config
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
 ```
 
+## General mac setup
+```
+## Disables hold key for accents
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
 ## Other interesting dotfiles
 1. [nicsp](https://github.com/nicksp/dotfiles/blob/master/osx/set-defaults.sh) (See the script in repo for setting up MacOS-spesific things)
 1. And all the others at [Github](https://dotfiles.github.io/)
