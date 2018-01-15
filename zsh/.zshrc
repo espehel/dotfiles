@@ -48,11 +48,18 @@ source $ZSH/oh-my-zsh.sh
 #     DIGIPOST       #
 ######################
 
-DIGIPOST-HOME=~/projects/digipost/
+DIGIPOST_HOME=$HOME/projects/digipost
+DPOST_REPOS_PATH=/projects/digipost
 
 source $HOME/.digipostrc
 
 # Alias pass-kommandoer slik  at vi kan alternere lettere mellom de
 alias dppass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/digipost-passwords"
 alias vpnpass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/vpn-passwords"
+
+# Link up mono install path
+export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin:$PATH
+
+# Link up dotnet install path
+ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/
 
