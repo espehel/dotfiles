@@ -21,6 +21,11 @@ ln -s ~/.dotfiles/ssh/config ~/.ssh/config
 
 # Add 'subl' as a command for running sublime from Terminal. More info here:https://gist.github.com/olivierlacan/1195304
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+
+# Set key repeat more aggressive than what can be done in Settings
+defaults write -g InitialKeyRepeat -int 1 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+
 ```
 
 ## General mac setup
