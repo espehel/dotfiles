@@ -10,17 +10,28 @@ brew cask install sublime-text2 spotify spectacle sourcetree openconnect dotfile
 Consider adding these to a separate scripts file
 
 ```
-#Make sure tags are pushed by default in Git
+# Make sure tags are pushed by default in Git
 git config --global push.followTags true
 
-#Symlink Zsh config file to dotfiles repo
+# Symlink Zsh config file to dotfiles repo
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 
-#Symlink SSH config to dotfiles repo
+# Symlink SSH config to dotfiles repo
 ln -s ~/.dotfiles/ssh/config ~/.ssh/config
 
-#Add 'subl' as a command for running sublime from Terminal. More info here:https://gist.github.com/olivierlacan/1195304
+# Add 'subl' as a command for running sublime from Terminal. More info here:https://gist.github.com/olivierlacan/1195304
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+
+```
+
+## General mac setup
+```
+# Disables hold key for accents
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# Set key repeat more aggressive than what can be done in Settings
+defaults write -g InitialKeyRepeat -inet 15 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 ```
 
 ## Other interesting dotfiles
