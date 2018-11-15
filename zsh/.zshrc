@@ -67,3 +67,12 @@ export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin:$PATH
 # Link up dotnet install path
 # ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/
 
+# added by travis gem
+[ -f /Users/aas/.travis/travis.sh ] && source /Users/aas/.travis/travis.sh
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+
+#################################
+## Jenv			       ##
+#################################
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
