@@ -16,6 +16,8 @@ hash -d digi=~/projects/digipost/
 hash -d dp=~/projects/digipost/digipost/
 hash -d sign=~/projects/digipost/signering/
 hash -d signf=~/projects/digipost/signering-frontend/
+hash -d signd=~/projects/digipost/signature-api-client-dotnet 
+hash -d pi=~/projects/private/hue-server
 
 ########################
 # Oh-my-zsh-config     #
