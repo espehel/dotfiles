@@ -1,4 +1,4 @@
-# JAVA 8
+# JAVA
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 # BREW
@@ -57,9 +57,13 @@ source $HOME/.digipostrc
 alias dppass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/digipost-passwords"
 alias vpnpass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/vpn-passwords"
 
+############################
+## Oppsett dotnet og mono ##
+############################
+
 # Link up mono install path
 export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin:$PATH
 
 # Link up dotnet install path
-ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/
+# ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/
 
