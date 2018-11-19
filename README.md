@@ -4,6 +4,7 @@
 ```
 brew install zsh oh-my-zsh
 brew cask install sublime-text2 spotify spectacle sourcetree openconnect dotfiles
+brew install tig
 ```
 
 ## Setup commandos 
