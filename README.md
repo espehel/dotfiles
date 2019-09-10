@@ -84,6 +84,7 @@ defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
 defaults write com.apple.CrashReporter DialogType -string "none"
 
 # Different screenshots folder
+mkdir "${HOME}/Screenshots"
 defaults write com.apple.screencapture location -string "${HOME}/Screenshots"
 ```
 
