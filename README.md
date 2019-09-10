@@ -31,7 +31,7 @@ ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/lo
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Set key repeat more aggressive than what can be done in Settings
-defaults write -g InitialKeyRepeat -inet 15 # normal minimum is 15 (225 ms)
+defaults write -g InitialKeyRepeat -int 2 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 
 # Disable the “Are you sure you want to open this application?” dialog
