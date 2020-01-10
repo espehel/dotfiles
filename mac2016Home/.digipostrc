@@ -1,0 +1,65 @@
+# Miljøvariabler for Digipost ------------------------------------------
+
+# Hvis du har satt DIGIPOST_USER, DIGIPOST_HOME eller DIGIPOST_GPG_AS_SSH_KEY i .bashrc eller .zshrc
+# så vil ikke de overstyres. ':-' er ternary-operator. Se mer info her:
+# http://wiki.bash-hackers.org/syntax/pe#use_a_default_value
+export DIGIPOST_USER=espehel                  # Ditt brukernavn i Digiposts systemer (vpn, ssh, etc)
+export DIGIPOST_HOME=${DIGIPOST_HOME:-"$HOME/digipost"}	        # Katalog hvor alle repos er klonet
+export DIGIPOST_GPG_AS_SSH_KEY=${DIGIPOST_GPG_AS_SSH_KEY:-0}    # Settes til 1 hvis du ønsker å benytte din PGP-nøkkel (GPG) som SSH-nøkkel
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+export M2_REPO=$HOME/.m2/repository
+export DPOST_HOME=$DIGIPOST_HOME/dpost_home
+export LOGFOLDER=$DPOST_HOME/logs
+
+export DPOST_MAIN_REPO=$DIGIPOST_HOME/digipost
+export DPOST_POSTIT_REPO=$DIGIPOST_HOME/digipost-postit
+export DPOST_WEBAPP_REPO=$DIGIPOST_HOME/digipost-webapp
+export DPOST_OFFENTLIG_REPO=$DIGIPOST_HOME/digipost-offentlig
+export DPOST_REPOS_PATH=$DIGIPOST_HOME
+
+export PATH=$PATH:$DIGIPOST_HOME/digipost/scripts
+
+# Språk og encoding ----------------------------------------------------
+export LC_CTYPE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+
+# Initialiserer digipost-sub -------------------------------------------
+eval "$($DIGIPOST_HOME/digipost-sub/bin/dp init -)"
+
+# Oppsett for signering / VPN, ref https://github.com/digipost/signering/wiki/VPN
+export GOPATH=${DPOST_REPOS_PATH}/go
+export PATH=${PATH}:${GOPATH}/bin
+
+# GPG ------------------------------------------------------------------
+export GPG_TTY=$(tty)
+if [ "$DIGIPOST_GPG_AS_SSH_KEY" -ne 0 ]; then
+  export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+fi
+gpgconf --launch gpg-agent
+# ----------------------------------------------------------------------
+
+alias dppass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/digipost-passwords"
+alias vpnpass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/vpn-passwords"
+alias opspass="export PASSWORD_STORE_DIR=${DPOST_REPOS_PATH}/passwords"
+
+# Java ------------------------------------------------------------------
+alias java10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
+alias java8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+
+# VPN ------------------------------------------------------------------
+export VPN_USERNAME="${DIGIPOST_USER}"
+export VPN_PASSWORD_STORE_DIRECTORY="${DPOST_REPOS_PATH}/vpn-passwords"
+export PASSWORD_STORE_DIR="${VPN_PASSWORD_STORE_DIRECTORY}"  # for pass (https://www.passwordstore.org)
+#-----------------------------------------------------------------------
+
+# Nifty funksjon som trekker ut VPN-er du er logga på
+function vpns() {
+  VPNS=$( scutil --nc list | grep $1 | cut -d '"' -f 2 | tr '\n' ' ' | sed 's/ $//'; echo '' )
+  if [ ${#VPNS} -gt 0 ]; then
+    echo -n " 🔒  "
+  fi
+  echo -n $VPNS
+}
+

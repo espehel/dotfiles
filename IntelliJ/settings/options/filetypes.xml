@@ -1,0 +1,15 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="Jenkinsfile" type="Groovy" />
+      <mapping pattern="ContextProviders.js" type="JavaScript" />
+      <mapping pattern="AttachmentLink" type="JavaScript" />
+      <mapping pattern="result" type="PLAIN_TEXT" />
+      <mapping pattern=".prettierrc" type="PLAIN_TEXT" />
+      <mapping pattern="dp-postkasse-deploy" type="PLAIN_TEXT" />
+      <mapping ext="mtail" type="PLAIN_TEXT" />
+      <mapping ext="tmpl" type="XML" />
+      <removed_mapping ext="tmpl" approved="true" type="XHTML" />
+    </extensionMap>
+  </component>
+</application>

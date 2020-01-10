@@ -1,0 +1,2 @@
+GLSL
+com.intellij.plugins.watcher

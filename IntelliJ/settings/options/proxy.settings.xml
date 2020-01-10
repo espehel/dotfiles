@@ -1,0 +1,8 @@
+<application>
+  <component name="HttpConfigurable">
+    <option name="USE_PROXY_PAC" value="true" />
+    <option name="PROXY_HOST" value="localhost" />
+    <option name="PROXY_PORT" value="5865" />
+    <option name="PROXY_EXCEPTIONS" value="u-114-270-021.mistraldev.com" />
+  </component>
+</application>
