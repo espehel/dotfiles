@@ -7,6 +7,14 @@ brew cask install sublime-text2 spotify spectacle sourcetree openconnect dotfile
 brew install tig
 ```
 
+## TERMINAL
+
+### OhMyZsh
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+```
+
 ## Setup commandos 
 Consider adding these to a separate scripts file
 
